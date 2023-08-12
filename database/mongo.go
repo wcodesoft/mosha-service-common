@@ -7,7 +7,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-type MongoDatabase struct {
+type MongoConnection struct {
 	client     *mongo.Client
 	Collection *mongo.Collection
 }
@@ -23,9 +23,9 @@ func NewMongoClient(mongoURI string) (*mongo.Client, error) {
 	return client, nil
 }
 
-func NewMongoDatabase(client *mongo.Client, database string, collection string) *MongoDatabase {
+func NewMongoConnection(client *mongo.Client, database string, collection string) *MongoConnection {
 	coll := client.Database(database).Collection(collection)
-	return &MongoDatabase{
+	return &MongoConnection{
 		client:     client,
 		Collection: coll,
 	}
