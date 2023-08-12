@@ -8,6 +8,7 @@ import (
 	"os"
 )
 
+// CreateNewGRPCServer creates a new gRPC server with logger interceptor.
 func CreateNewGRPCServer() *grpc.Server {
 	l := log.New(os.Stderr)
 	loggerOpts := []logging.Option{
