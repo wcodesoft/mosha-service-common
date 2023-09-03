@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.23.3
-// source: protos/quote_service/quote.proto
+// source: protos/quoteservice/quote.proto
 
-package proto
+package quoteservice
 
 import (
 	context "context"
@@ -342,5 +342,5 @@ var QuoteService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "protos/quote_service/quote.proto",
+	Metadata: "protos/quoteservice/quote.proto",
 }

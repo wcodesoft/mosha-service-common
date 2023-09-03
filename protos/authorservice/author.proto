@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package authorservice;
-option go_package = "github.com/wcodesoft/mosha-author-service/proto";
+option go_package = "github.com/wcodesoft/mosha-service-common/protos/authorservice";
 
 import "google/protobuf/empty.proto";
 

@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v4.23.3
-// source: proto/author.proto
+// source: protos/authorservice/author.proto
 
-package proto
+package authorservice
 
 import (
 	context "context"
@@ -264,5 +264,5 @@ var AuthorService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "proto/author.proto",
+	Metadata: "protos/authorservice/author.proto",
 }

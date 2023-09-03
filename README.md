@@ -10,5 +10,5 @@ To regenerate the gRPC code, run:
 ```bash
 protoc --go_out=. --go_opt=paths=source_relative \
   --go-grpc_out=. --go-grpc_opt=paths=source_relative \
-  protos/author_service/author.proto
+  protos/authorservice/author.proto
 ```

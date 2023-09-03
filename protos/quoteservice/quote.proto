@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package quoteservice;
-option go_package = "github.com/wcodesoft/mosha-quote-service/proto";
+option go_package = "github.com/wcodesoft/mosha-service-common/protos/quoteservice";
 
 import "google/protobuf/empty.proto";
 
